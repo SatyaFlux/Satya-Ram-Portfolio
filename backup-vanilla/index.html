@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Satya Ram — Software Engineer specializing in AI/ML, Full Stack Development, and scalable digital products.">
+  <meta name="author" content="Satya Ram">
+  <meta name="theme-color" content="#f4f3ee">
+  <title>Satya Ram — Software Engineer</title>
+
+  <!-- Google Fonts: Syne (Editorial Display), Plus Jakarta Sans (Clean Modern UI), DM Mono (Technical Accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Montserrat:wght@800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Film Grain Overlay for Editorial Texture -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Custom Cursor for Desktop -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true">
+    <span class="cursor-label" id="cursorLabel"></span>
+  </div>
+
+  <!-- Navigation -->
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#contact" class="nav-status-pill" title="Available for opportunities">
+        <span class="status-pulse-dot"></span>
+        <span class="status-pill-text">Available for New Project</span>
+      </a>
+
+      <nav class="desktop-menu" aria-label="Primary Navigation">
+        <a href="#projects" class="nav-link">Work <span class="nav-count">[3]</span></a>
+        <a href="#capabilities" class="nav-link">Service <span class="nav-count">[4]</span></a>
+        <a href="#experience" class="nav-link">Experience <span class="nav-count">[5+]</span></a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="nav-cta-pill magnetic" data-cursor="TALK">
+          <span>Let's Talk</span>
+          <span class="pill-arr">↗</span>
+        </a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="ham-line"></span>
+          <span class="ham-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="drawer-brand">SATYA RAM</span>
+      <span class="drawer-tag">PORTFOLIO '26</span>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="#home" class="mobile-link"><span class="link-idx">01</span><span class="link-title">HOME</span><span class="link-arrow">↗</span></a>
+      <a href="#about" class="mobile-link"><span class="link-idx">02</span><span class="link-title">ABOUT</span><span class="link-arrow">↗</span></a>
+      <a href="#skills" class="mobile-link"><span class="link-idx">03</span><span class="link-title">SKILLS</span><span class="link-arrow">↗</span></a>
+      <a href="#projects" class="mobile-link"><span class="link-idx">04</span><span class="link-title">WORK</span><span class="link-arrow">↗</span></a>
+      <a href="#experience" class="mobile-link"><span class="link-idx">05</span><span class="link-title">EXPERIENCE</span><span class="link-arrow">↗</span></a>
+      <a href="#contact" class="mobile-link"><span class="link-idx">06</span><span class="link-title">CONTACT</span><span class="link-arrow">↗</span></a>
+    </nav>
+    <div class="drawer-footer">
+      <div class="drawer-info">
+        <span>SOFTWARE ENGINEER</span>
+        <span>AI/ML • FULL STACK</span>
+      </div>
+      <div class="drawer-socials">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GITHUB</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+        <a href="mailto:hello@satyaram.dev">EMAIL</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+    <!-- ==================== 1. HERO SECTION (DYMAS ALFIN STYLE) ==================== -->
+    <section class="hero-section dymas-hero" id="home">
+      
+      <!-- Layer 1: Giant Background Title (SATYA outlined + RAM solid) -->
+      <div class="hero-giant-headline reveal-item" style="--delay: 0.1s" aria-label="SATYA RAM">
+        <svg class="hero-giant-svg" viewBox="0 0 1440 210" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <text x="722" y="165" text-anchor="end" class="svg-word-outline">SATYA</text>
+          <text x="742" y="165" text-anchor="start" class="svg-word-solid" letter-spacing="0.08em">RAM</text>
+        </svg>
+      </div>
+
+      <!-- Layer 2: Center Cutout Portrait of Satya overlapping the typography -->
+      <div class="hero-center-portrait reveal-item" style="--delay: 0.25s" id="heroCenterPortrait">
+        <img 
+          src="portrait-cutout.png" 
+          alt="Satya Ram — Software Engineer portrait" 
+          class="center-cutout-img"
+          fetchpriority="high"
+          loading="eager"
+          width="542"
+          height="669"
+        >
+      </div>
+
+      <!-- Layer 3: Left Floating Content Block (Role, Bio & CTA) -->
+      <div class="hero-float-left reveal-item" style="--delay: 0.35s">
+        <h1 class="hero-role-title">Software Engineer</h1>
+        <p class="hero-role-desc">
+          Building intelligent software, modern web experiences, and scalable digital products.
+        </p>
+        <div class="hero-role-actions">
+          <a href="#contact" class="pill-btn-black magnetic" data-cursor="TALK">
+            <span>Let's collaborate</span>
+            <span class="pill-arr">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Layer 4: Right Floating Social Pill Stack -->
+      <div class="hero-float-right reveal-item" style="--delay: 0.45s">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-pill-item magnetic" data-cursor="GITHUB">
+          <span class="pill-svg-icon" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </span>
+          <span class="pill-label">GitHub</span>
+        </a>
+
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-pill-item magnetic" data-cursor="LINKEDIN">
+          <span class="pill-svg-icon" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </span>
+          <span class="pill-label">LinkedIn</span>
+        </a>
+
+        <a href="mailto:hello@satyaram.dev" class="social-pill-item magnetic" data-cursor="EMAIL">
+          <span class="pill-svg-icon" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+          </span>
+          <span class="pill-label">Email</span>
+        </a>
+
+        <button class="social-pill-item magnetic" id="heroQuickCopyBtn" data-cursor="COPY" title="Copy email address">
+          <span class="pill-svg-icon" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+          </span>
+          <span class="pill-label" id="heroQuickCopyText">Copy Email</span>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ==================== 2. ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="site-container">
+        
+        <!-- Section Header -->
+        <div class="section-kicker-row reveal-on-scroll">
+          <div class="kicker-group">
+            <span class="kicker-num">01</span>
+            <span class="kicker-dash"></span>
+            <span class="kicker-text">ABOUT ME</span>
+          </div>
+          <span class="kicker-index">01 / 05</span>
+        </div>
+
+        <div class="about-grid">
+          <!-- Large Editorial Heading -->
+          <div class="about-headline-col reveal-on-scroll">
+            <h2 class="editorial-heading">
+              Curious by<br>
+              nature.<br>
+              <span class="heading-serif">Engineer</span> by<br>
+              <span class="heading-accent">practice.</span>
+            </h2>
+
+            <div class="about-quote-box">
+              <span class="quote-symbol">&ldquo;</span>
+              <p>Designing digital experiences where rigorous engineering meets intuitive clarity.</p>
+            </div>
+          </div>
+
+          <!-- Narrative and Information Labels -->
+          <div class="about-content-col reveal-on-scroll">
+            <div class="about-text-block">
+              <p class="about-lead">
+                I'm Satya Ram, a Software Engineer focused on building modern digital products, intelligent applications, and scalable web experiences. I enjoy transforming complex ideas into clean, functional, and user-focused software.
+              </p>
+              <p class="about-body">
+                My work combines software engineering, artificial intelligence, machine learning, frontend development, backend systems, and modern cloud technologies.
+              </p>
+            </div>
+
+            <!-- Editorial Information Labels Grid -->
+            <div class="info-labels-list">
+              <div class="info-row">
+                <span class="info-tag">ROLE</span>
+                <span class="info-val">Software Engineer</span>
+              </div>
+              <div class="info-row">
+                <span class="info-tag">FOCUS</span>
+                <span class="info-val">AI/ML &bull; Full Stack &bull; Web Development</span>
+              </div>
+              <div class="info-row">
+                <span class="info-tag">SPECIALIZATION</span>
+                <span class="info-val">Intelligent Applications &amp; Digital Products</span>
+              </div>
+            </div>
+
+            <!-- Quick Action Links -->
+            <div class="about-actions">
+              <a href="#projects" class="text-arrow-btn">
+                <span>See Selected Projects</span>
+                <span class="arr">&rarr;</span>
+              </a>
+              <a href="#skills" class="text-arrow-btn">
+                <span>Explore Technical Stack</span>
+                <span class="arr">&rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Infinite Editorial Marquee Ribbon -->
+      <div class="marquee-ribbon" aria-hidden="true">
+        <div class="marquee-track">
+          <span>THOUGHTFUL CODE</span><i class="marquee-star">&bull;</i>
+          <span>HUMAN-CENTERED DESIGN</span><i class="marquee-star">&bull;</i>
+          <span>SCALABLE ARCHITECTURE</span><i class="marquee-star">&bull;</i>
+          <span>INTELLIGENT SYSTEMS</span><i class="marquee-star">&bull;</i>
+          <span>CONTINUOUS LEARNING</span><i class="marquee-star">&bull;</i>
+          <span>THOUGHTFUL CODE</span><i class="marquee-star">&bull;</i>
+          <span>HUMAN-CENTERED DESIGN</span><i class="marquee-star">&bull;</i>
+          <span>SCALABLE ARCHITECTURE</span><i class="marquee-star">&bull;</i>
+          <span>INTELLIGENT SYSTEMS</span><i class="marquee-star">&bull;</i>
+          <span>CONTINUOUS LEARNING</span><i class="marquee-star">&bull;</i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. WHAT I BUILD ==================== -->
+    <section class="section capabilities-section" id="capabilities">
+      <div class="site-container">
+        
+        <div class="section-kicker-row reveal-on-scroll">
+          <div class="kicker-group">
+            <span class="kicker-num">02</span>
+            <span class="kicker-dash"></span>
+            <span class="kicker-text">CAPABILITIES</span>
+          </div>
+          <span class="kicker-index">02 / 05</span>
+        </div>
+
+        <div class="cap-intro-row reveal-on-scroll">
+          <h2 class="editorial-heading">
+            WHAT I<br>
+            <span class="heading-accent">BUILD</span>
+          </h2>
+          <p class="cap-intro-desc">
+            Bridging technical depth with product sensibility. From complex algorithms to polished user interfaces.
+          </p>
+        </div>
+
+        <!-- 4 Major Capabilities List -->
+        <div class="capabilities-list">
+          
+          <article class="cap-card reveal-on-scroll" data-cursor="VIEW">
+            <div class="cap-number">01</div>
+            <div class="cap-info">
+              <h3 class="cap-title">SOFTWARE ENGINEERING</h3>
+              <p class="cap-desc">Scalable and maintainable software solutions.</p>
+            </div>
+            <div class="cap-tags">
+              <span>Architecture</span>
+              <span>System Design</span>
+              <span>Clean Code</span>
+            </div>
+            <div class="cap-action-icon">&plus;</div>
+          </article>
+
+          <article class="cap-card reveal-on-scroll" data-cursor="VIEW">
+            <div class="cap-number">02</div>
+            <div class="cap-info">
+              <h3 class="cap-title">AI &amp; MACHINE LEARNING</h3>
+              <p class="cap-desc">Intelligent applications powered by AI/ML.</p>
+            </div>
+            <div class="cap-tags">
+              <span>Deep Learning</span>
+              <span>Vision Models</span>
+              <span>Intelligent APIs</span>
+            </div>
+            <div class="cap-action-icon">&plus;</div>
+          </article>
+
+          <article class="cap-card reveal-on-scroll" data-cursor="VIEW">
+            <div class="cap-number">03</div>
+            <div class="cap-info">
+              <h3 class="cap-title">FULL STACK DEVELOPMENT</h3>
+              <p class="cap-desc">Modern frontend, backend and database systems.</p>
+            </div>
+            <div class="cap-tags">
+              <span>React &bull; Node</span>
+              <span>Python &bull; FastAPI</span>
+              <span>Relational DBs</span>
+            </div>
+            <div class="cap-action-icon">&plus;</div>
+          </article>
+
+          <article class="cap-card reveal-on-scroll" data-cursor="VIEW">
+            <div class="cap-number">04</div>
+            <div class="cap-info">
+              <h3 class="cap-title">DIGITAL EXPERIENCES</h3>
+              <p class="cap-desc">Responsive, interactive and user-focused web applications.</p>
+            </div>
+            <div class="cap-tags">
+              <span>Fluid Motion</span>
+              <span>Accessibility</span>
+              <span>Responsive UI</span>
+            </div>
+            <div class="cap-action-icon">&plus;</div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 4. TECH STACK ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="site-container">
+        
+        <div class="section-kicker-row reveal-on-scroll">
+          <div class="kicker-group">
+            <span class="kicker-num">03</span>
+            <span class="kicker-dash"></span>
+            <span class="kicker-text">SKILLS &amp; ARSENAL</span>
+          </div>
+          <span class="kicker-index">03 / 05</span>
+        </div>
+
+        <div class="skills-head-row reveal-on-scroll">
+          <div>
+            <h2 class="editorial-heading">
+              TECH<br>
+              <span class="heading-accent">STACK</span>
+            </h2>
+            <p class="skills-sub">A curated set of technologies I use to build robust, modern software.</p>
+          </div>
+          <div class="skills-legend">
+            <span class="legend-badge">NO BORING BARS</span>
+            <span class="legend-note">&bull; INTERACTIVE TYPOGRAPHY</span>
+          </div>
+        </div>
+
+        <!-- Categorized Skills Grid -->
+        <div class="skills-categories-grid">
+          
+          <!-- Category 1: FRONTEND -->
+          <div class="skill-category-card reveal-on-scroll" data-cat="frontend">
+            <div class="cat-header">
+              <span class="cat-idx">01</span>
+              <h3 class="cat-name">FRONTEND</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill" data-tech="HTML">HTML</span>
+              <span class="skill-pill" data-tech="CSS">CSS</span>
+              <span class="skill-pill" data-tech="JavaScript">JavaScript</span>
+              <span class="skill-pill" data-tech="React">React</span>
+              <span class="skill-pill" data-tech="Responsive Design">Responsive Design</span>
+            </div>
+          </div>
+
+          <!-- Category 2: BACKEND -->
+          <div class="skill-category-card reveal-on-scroll" data-cat="backend">
+            <div class="cat-header">
+              <span class="cat-idx">02</span>
+              <h3 class="cat-name">BACKEND</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill" data-tech="Python">Python</span>
+              <span class="skill-pill" data-tech="FastAPI">FastAPI</span>
+              <span class="skill-pill" data-tech="Node.js">Node.js</span>
+              <span class="skill-pill" data-tech="REST APIs">REST APIs</span>
+            </div>
+          </div>
+
+          <!-- Category 3: AI / ML -->
+          <div class="skill-category-card reveal-on-scroll" data-cat="aiml">
+            <div class="cat-header">
+              <span class="cat-idx">03</span>
+              <h3 class="cat-name">AI / ML</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill" data-tech="Python">Python</span>
+              <span class="skill-pill" data-tech="Machine Learning">Machine Learning</span>
+              <span class="skill-pill" data-tech="Artificial Intelligence">Artificial Intelligence</span>
+              <span class="skill-pill" data-tech="Computer Vision">Computer Vision</span>
+            </div>
+          </div>
+
+          <!-- Category 4: DATABASE -->
+          <div class="skill-category-card reveal-on-scroll" data-cat="database">
+            <div class="cat-header">
+              <span class="cat-idx">04</span>
+              <h3 class="cat-name">DATABASE</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill" data-tech="Supabase">Supabase</span>
+              <span class="skill-pill" data-tech="PostgreSQL">PostgreSQL</span>
+              <span class="skill-pill" data-tech="Database Design">Database Design</span>
+            </div>
+          </div>
+
+          <!-- Category 5: TOOLS & CLOUD -->
+          <div class="skill-category-card reveal-on-scroll" data-cat="tools">
+            <div class="cat-header">
+              <span class="cat-idx">05</span>
+              <h3 class="cat-name">TOOLS &amp; CLOUD</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="skill-pill" data-tech="Git">Git</span>
+              <span class="skill-pill" data-tech="GitHub">GitHub</span>
+              <span class="skill-pill" data-tech="Vercel">Vercel</span>
+              <span class="skill-pill" data-tech="VS Code">VS Code</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 5. SELECTED PROJECTS ==================== -->
+    <section class="section projects-section dark-contrast" id="projects">
+      <div class="site-container">
+        
+        <div class="section-kicker-row reveal-on-scroll kicker-dark">
+          <div class="kicker-group">
+            <span class="kicker-num">04</span>
+            <span class="kicker-dash"></span>
+            <span class="kicker-text">PORTFOLIO SHOWCASE</span>
+          </div>
+          <span class="kicker-index">04 / 05 &bull; 03 PROJECTS</span>
+        </div>
+
+        <div class="projects-head-row reveal-on-scroll">
+          <div>
+            <h2 class="editorial-heading text-light">
+              SELECTED<br>
+              <span class="heading-accent-light">WORK</span>
+            </h2>
+            <p class="projects-sub">Things I've built.</p>
+          </div>
+          <p class="projects-side-note">
+            Editorial compositions combining engineering rigor, interactive data structures, and focused user experience.
+          </p>
+        </div>
+
+        <!-- Projects Showcase List -->
+        <div class="projects-showcase-list">
+
+          <!-- PROJECT 01: CHEMNEXUS -->
+          <article class="project-showcase reveal-on-scroll" id="proj-chem" tabindex="0" data-project-id="chemnexus">
+            <!-- Project Art Visual Composition -->
+            <div class="project-art-stage chem-theme" data-cursor="VIEW DETAILS">
+              <div class="art-meta-header">
+                <span class="art-badge">CHEMISTRY, REIMAGINED</span>
+                <span class="art-idx">01 // 03</span>
+              </div>
+
+              <!-- Interactive Chemistry periodic table visual composition -->
+              <div class="chem-visual-center">
+                <div class="periodic-grid-mockup">
+                  <div class="chem-cell"><span class="c-num">1</span><b class="c-sym">H</b><span class="c-name">Hydrogen</span></div>
+                  <div class="chem-cell active-cell"><span class="c-num">6</span><b class="c-sym">C</b><span class="c-name">Carbon</span></div>
+                  <div class="chem-cell"><span class="c-num">7</span><b class="c-sym">N</b><span class="c-name">Nitrogen</span></div>
+                  <div class="chem-cell"><span class="c-num">8</span><b class="c-sym">O</b><span class="c-name">Oxygen</span></div>
+                  <div class="chem-cell"><span class="c-num">11</span><b class="c-sym">Na</b><span class="c-name">Sodium</span></div>
+                  <div class="chem-cell"><span class="c-num">26</span><b class="c-sym">Fe</b><span class="c-name">Iron</span></div>
+                  <div class="chem-cell"><span class="c-num">79</span><b class="c-sym">Au</b><span class="c-name">Gold</span></div>
+                  <div class="chem-cell"><span class="c-num">17</span><b class="c-sym">Cl</b><span class="c-name">Chlorine</span></div>
+                </div>
+
+                <div class="chem-feature-badge">
+                  <span class="cf-brand">CHEM<br><b>NEXUS</b></span>
+                  <span class="cf-action">EXPLORE ELEMENTS &rarr;</span>
+                </div>
+              </div>
+
+              <div class="art-meta-footer">
+                <span>INTERACTIVE PERIODIC TABLE &bull; AI LAB ASSISTANT</span>
+                <span>STATEFUL REACT APP</span>
+              </div>
+            </div>
+
+            <!-- Project Editorial Metadata -->
+            <div class="project-meta-row">
+              <div class="meta-title-col">
+                <span class="project-num-tag">01 / KNOWLEDGE PLATFORM</span>
+                <h3 class="project-headline">CHEMNEXUS</h3>
+                <p class="project-tagline">"The Interactive Chemistry Knowledge Platform"</p>
+              </div>
+
+              <div class="meta-desc-col">
+                <p class="project-full-desc">
+                  An interactive chemistry knowledge platform designed to make chemical concepts easier to explore through an interactive periodic table, detailed element information, chemical reactions, search, authentication, learning progress, bookmarks and an optional AI chemistry assistant.
+                </p>
+                <div class="project-tech-tags">
+                  <span>React</span>
+                  <span>JavaScript</span>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Supabase</span>
+                </div>
+              </div>
+
+              <div class="meta-action-col">
+                <button class="project-action-btn open-modal-btn" data-project="chemnexus" aria-label="Open ChemNexus project details">
+                  <span>↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: SACHA SAUDA -->
+          <article class="project-showcase reveal-on-scroll" id="proj-sauda" tabindex="0" data-project-id="sachasauda">
+            <!-- Project Art Visual Composition -->
+            <div class="project-art-stage sauda-theme" data-cursor="VIEW DETAILS">
+              <div class="art-meta-header">
+                <span class="art-badge">EVERYDAY MARKETPLACE</span>
+                <span class="art-idx">02 // 03</span>
+              </div>
+
+              <div class="sauda-visual-center">
+                <div class="sauda-brand-box">
+                  <span class="s-kicker">COMMERCE SIMPLIFIED</span>
+                  <h4 class="s-title">Sacha<br>Sauda<span>.</span></h4>
+                  <p class="s-slogan">"Ghar ka sauda, sahi sauda"</p>
+                </div>
+
+                <div class="sauda-product-abstract">
+                  <div class="abstract-shape shape-a"></div>
+                  <div class="abstract-shape shape-b"></div>
+                  <div class="abstract-shape shape-c"></div>
+                  <div class="abstract-label">
+                    <span>DISCOVERY &bull; CART</span>
+                    <b>01 — 24 ITEMS</b>
+                  </div>
+                </div>
+              </div>
+
+              <div class="art-meta-footer">
+                <span>SEAMLESS AUTHENTICATION &bull; REALTIME INVENTORY</span>
+                <span>FAST &bull; RESPONSIVE &bull; VERIFIED</span>
+              </div>
+            </div>
+
+            <!-- Project Editorial Metadata -->
+            <div class="project-meta-row">
+              <div class="meta-title-col">
+                <span class="project-num-tag">02 / ONLINE MARKETPLACE</span>
+                <h3 class="project-headline">SACHA SAUDA</h3>
+                <p class="project-tagline">"Ghar ka sauda, sahi sauda"</p>
+              </div>
+
+              <div class="meta-desc-col">
+                <p class="project-full-desc">
+                  A modern marketplace-style web application focused on responsive product discovery, authentication, database integration and a clean shopping experience.
+                </p>
+                <div class="project-tech-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Supabase</span>
+                  <span>Vercel</span>
+                </div>
+              </div>
+
+              <div class="meta-action-col">
+                <button class="project-action-btn open-modal-btn" data-project="sachasauda" aria-label="Open Sacha Sauda project details">
+                  <span>↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: LIFE DASHBOARD -->
+          <article class="project-showcase reveal-on-scroll" id="proj-life" tabindex="0" data-project-id="lifedashboard">
+            <!-- Project Art Visual Composition -->
+            <div class="project-art-stage life-theme" data-cursor="VIEW DETAILS">
+              <div class="art-meta-header">
+                <span class="art-badge">PERSONAL PRODUCTIVITY</span>
+                <span class="art-idx">03 // 03</span>
+              </div>
+
+              <div class="life-visual-center">
+                <div class="life-panel-left">
+                  <span class="l-sub">UNIFIED WORKSPACE</span>
+                  <h4 class="l-heading">A little more<br>in <em>sync.</em></h4>
+                  <p class="l-tagline">"One place for your digital life."</p>
+                </div>
+
+                <div class="life-widgets-grid">
+                  <div class="life-widget widget-date">
+                    <span class="w-label">CURRENT</span>
+                    <b class="w-large">09</b>
+                    <span class="w-meta">OCTOBER &bull; MON</span>
+                  </div>
+                  <div class="life-widget widget-note">
+                    <span class="w-label">FOCUS NOTE</span>
+                    <p class="w-quote">Make room for deep work.</p>
+                  </div>
+                  <div class="life-widget widget-habits">
+                    <span class="w-label">RHYTHM</span>
+                    <div class="habit-rings">
+                      <div class="h-ring r1"></div>
+                      <div class="h-ring r2"></div>
+                      <div class="h-ring r3"></div>
+                    </div>
+                    <span class="w-meta">3 OF 4 COMPLETE</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="art-meta-footer">
+                <span>CONSOLIDATED TOOLS &bull; LOCAL STORAGE PERSISTENCE</span>
+                <span>MINIMALIST DASHBOARD</span>
+              </div>
+            </div>
+
+            <!-- Project Editorial Metadata -->
+            <div class="project-meta-row">
+              <div class="meta-title-col">
+                <span class="project-num-tag">03 / PRODUCTIVITY APP</span>
+                <h3 class="project-headline">LIFE DASHBOARD</h3>
+                <p class="project-tagline">"One place for your digital life."</p>
+              </div>
+
+              <div class="meta-desc-col">
+                <p class="project-full-desc">
+                  A modern personal dashboard designed to organize important information, activities and productivity tools into one unified interface.
+                </p>
+                <div class="project-tech-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+
+              <div class="meta-action-col">
+                <button class="project-action-btn open-modal-btn" data-project="lifedashboard" aria-label="Open Life Dashboard project details">
+                  <span>↗</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 6. EXPERIENCE / JOURNEY ==================== -->
+    <section class="section experience-section" id="experience">
+      <div class="site-container">
+        
+        <div class="section-kicker-row reveal-on-scroll">
+          <div class="kicker-group">
+            <span class="kicker-num">05</span>
+            <span class="kicker-dash"></span>
+            <span class="kicker-text">JOURNEY &bull; TIMELINE</span>
+          </div>
+          <span class="kicker-index">05 / 05</span>
+        </div>
+
+        <div class="experience-head-row reveal-on-scroll">
+          <h2 class="editorial-heading">
+            EXPERIENCE<br>
+            <span class="heading-accent">TIMELINE</span>
+          </h2>
+          <p class="exp-sub">
+            The progression of skills, software craftsmanship, and continuous exploration across engineering disciplines.
+          </p>
+        </div>
+
+        <!-- Vertical Timeline with Scroll Progress Line -->
+        <div class="timeline-container" id="timelineContainer">
+          <div class="timeline-track-line" id="timelineProgress"></div>
+
+          <!-- Timeline Item 01 -->
+          <div class="timeline-entry reveal-on-scroll">
+            <div class="entry-index">01</div>
+            <div class="entry-dot"></div>
+            <div class="entry-content">
+              <div class="entry-header">
+                <h3 class="entry-title">Software Engineering</h3>
+                <span class="entry-badge">FOUNDATION &bull; CORE</span>
+              </div>
+              <p class="entry-desc">
+                Building scalable, maintainable software architectures with high code quality, reliable testing principles, and thoughtful design patterns.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 02 -->
+          <div class="timeline-entry reveal-on-scroll">
+            <div class="entry-index">02</div>
+            <div class="entry-dot"></div>
+            <div class="entry-content">
+              <div class="entry-header">
+                <h3 class="entry-title">AI &amp; Machine Learning</h3>
+                <span class="entry-badge">THE FRONTIER</span>
+              </div>
+              <p class="entry-desc">
+                Developing intelligent applications that leverage machine learning models, natural language processing, and computer vision pipelines to solve real-world problems.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 03 -->
+          <div class="timeline-entry reveal-on-scroll">
+            <div class="entry-index">03</div>
+            <div class="entry-dot"></div>
+            <div class="entry-content">
+              <div class="entry-header">
+                <h3 class="entry-title">Full Stack Development</h3>
+                <span class="entry-badge">END-TO-END</span>
+              </div>
+              <p class="entry-desc">
+                Engineering complete web ecosystems by pairing responsive, accessible frontend clients with performant REST APIs, authentication layers, and relational databases.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 04 -->
+          <div class="timeline-entry reveal-on-scroll">
+            <div class="entry-index">04</div>
+            <div class="entry-dot"></div>
+            <div class="entry-content">
+              <div class="entry-header">
+                <h3 class="entry-title">Project Development</h3>
+                <span class="entry-badge">PRACTICE &bull; DELIVERY</span>
+              </div>
+              <p class="entry-desc">
+                Taking concepts from initial whiteboards and requirements gathering through prototype iteration, database schema design, and production deployment on cloud platforms.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 05 -->
+          <div class="timeline-entry reveal-on-scroll">
+            <div class="entry-index">05</div>
+            <div class="entry-dot"></div>
+            <div class="entry-content">
+              <div class="entry-header">
+                <h3 class="entry-title">Continuous Learning</h3>
+                <span class="entry-badge">ALWAYS EVOLVING</span>
+              </div>
+              <p class="entry-desc">
+                Constantly expanding technical horizons through deep-dives into modern frameworks, system optimization, distributed design, and cutting-edge AI breakthroughs.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== 7. CONTACT SECTION ==================== -->
+    <section class="section contact-section dark-contrast" id="contact">
+      <div class="site-container">
+        
+        <div class="section-kicker-row reveal-on-scroll kicker-dark">
+          <div class="kicker-group">
+            <span class="kicker-num">&bull;</span>
+            <span class="kicker-dash"></span>
+            <span class="kicker-text">INITIATE CONTACT</span>
+          </div>
+          <span class="kicker-index">OPEN FOR OPPORTUNITIES</span>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left Column: Dramatic Heading & Action Buttons -->
+          <div class="contact-intro-col reveal-on-scroll">
+            <p class="contact-sup-tag">LET'S START A CONVERSATION</p>
+            
+            <h2 class="contact-hero-heading">
+              LET'S BUILD<br>
+              <em>SOMETHING.</em>
+            </h2>
+
+            <p class="contact-subtext">
+              Have an idea, a project, or an opportunity? Let's create something meaningful.
+            </p>
+
+            <!-- Direct Contact Buttons -->
+            <div class="contact-channel-buttons">
+              <a href="mailto:hello@satyaram.dev" class="channel-btn magnetic" id="emailDirectBtn" data-cursor="WRITE">
+                <span class="ch-label">EMAIL ME</span>
+                <span class="ch-val">hello@satyaram.dev</span>
+                <span class="ch-arrow">↗</span>
+              </a>
+
+              <button class="copy-email-btn" id="copyEmailBtn" title="Copy email address to clipboard">
+                <span class="copy-icon">⎘</span>
+                <span class="copy-status" id="copyStatusText">COPY EMAIL</span>
+              </button>
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact-social-row">
+              <span class="social-header">CHANNELS:</span>
+              <div class="social-pills">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" data-cursor="VISIT">GITHUB ↗</a>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link" data-cursor="CONNECT">LINKEDIN ↗</a>
+                <a href="mailto:hello@satyaram.dev" class="social-link" data-cursor="MAIL">EMAIL ME ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form with Validation -->
+          <div class="contact-form-col reveal-on-scroll">
+            <div class="form-container-card">
+              <div class="form-header">
+                <span class="form-indicator-dot"></span>
+                <span class="form-title">SEND A DIRECT MESSAGE</span>
+              </div>
+
+              <form class="contact-form" id="contactForm" novalidate>
+                
+                <div class="form-field">
+                  <label for="userName" class="field-label">NAME <span class="req">*</span></label>
+                  <input 
+                    type="text" 
+                    id="userName" 
+                    name="name" 
+                    class="field-input" 
+                    placeholder="Your name or organization" 
+                    required 
+                    minlength="2"
+                    autocomplete="name"
+                  >
+                  <span class="field-error-msg" id="nameError"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="userEmail" class="field-label">EMAIL <span class="req">*</span></label>
+                  <input 
+                    type="email" 
+                    id="userEmail" 
+                    name="email" 
+                    class="field-input" 
+                    placeholder="your.email@example.com" 
+                    required 
+                    autocomplete="email"
+                  >
+                  <span class="field-error-msg" id="emailError"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="userMessage" class="field-label">MESSAGE <span class="req">*</span></label>
+                  <textarea 
+                    id="userMessage" 
+                    name="message" 
+                    class="field-textarea" 
+                    rows="4" 
+                    placeholder="Tell me about your project, timeline, or idea..." 
+                    required 
+                    minlength="10"
+                  ></textarea>
+                  <span class="field-error-msg" id="messageError"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit-form magnetic" id="submitFormBtn" data-cursor="SEND">
+                  <span class="btn-text">SEND MESSAGE</span>
+                  <span class="btn-arrow">↗</span>
+                </button>
+
+                <!-- Feedback Toast inside card -->
+                <div class="form-status-alert" id="formStatusAlert" aria-live="polite"></div>
+
+                <p class="form-privacy-note">
+                  Direct communication &bull; Replies typically within 24 hours.
+                </p>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Back to Top Cue -->
+        <div class="contact-foot-bar">
+          <span>INDIA &bull; AVAILABLE REMOTELY GLOBALLY</span>
+          <a href="#navbar" class="back-to-top-btn" data-cursor="TOP">
+            <span>BACK TO TOP</span>
+            <span class="btt-arrow">&uarr;</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 8. MINIMAL PREMIUM FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="site-container footer-container">
+      
+      <div class="footer-left">
+        <a href="#home" class="footer-brand-title">SATYA RAM</a>
+        <p class="footer-title">SOFTWARE ENGINEER</p>
+        <p class="footer-spec">AI/ML &bull; FULL STACK &bull; SOFTWARE DEVELOPMENT</p>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-social-links">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:hello@satyaram.dev">Email</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Satya Ram. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT DETAIL MODAL DIALOG ==================== -->
+  <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-container" role="document">
+      
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close project modal">
+        &times;
+      </button>
+
+      <div class="modal-content" id="modalDynamicContent">
+        <!-- Injected via JavaScript based on clicked project -->
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+</body>
+</html>
