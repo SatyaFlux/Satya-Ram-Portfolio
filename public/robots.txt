@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://satya-ram-portfolio.vercel.app/sitemap.xml
+Sitemap: https://satyaram-profile.vercel.app/sitemap.xml
