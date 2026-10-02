@@ -1,0 +1,6 @@
+# robots.txt for Satya Ram Portfolio
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://satya-ram-portfolio.vercel.app/sitemap.xml

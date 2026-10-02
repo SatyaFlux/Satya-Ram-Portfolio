@@ -116,7 +116,7 @@ export default function Contact({ onShowToast }) {
           {/* Left Column: Formal & Dignified Presentation */}
           <div className="contact-intro-col reveal-on-scroll">
             <h2 className="contact-formal-heading">
-              Let's discuss your next project and build something extraordinary.
+              Connect with Satya Ram — Software Engineer &amp; Developer
             </h2>
 
             <p className="contact-subtext">

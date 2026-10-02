@@ -55,7 +55,7 @@ export default function Hero({ onCopyEmail }) {
       >
         <img
           src="/portrait-cutout.png"
-          alt="Satya Ram — Software Engineer portrait"
+          alt="Satya Ram — Software Engineer and AI/ML Developer"
           className="center-cutout-img"
           fetchPriority="high"
           loading="eager"
@@ -76,7 +76,7 @@ export default function Hero({ onCopyEmail }) {
 
       {/* Layer 3: Left Floating Content Block (Role, Bio & CTA matching screenshot) */}
       <div className="hero-float-left reveal-item" style={{ '--delay': '0.35s' }}>
-        <h1 className="hero-role-title">Software Engineer</h1>
+        <h1 className="hero-role-title">Satya Ram — Software Engineer</h1>
         <p className="hero-role-desc">
           Building digital products that are fast, reliable,<br />
           and user-focused.

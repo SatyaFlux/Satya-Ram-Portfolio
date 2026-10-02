@@ -83,7 +83,7 @@ export default function Experience() {
           </div>
 
           <h2 className="experience-formal-title">
-            Engineering progression across software architecture, machine learning, and scalable systems.
+            Software Engineer progression across Python, React, JavaScript, and AI/ML systems.
           </h2>
 
           <p className="experience-sub-desc">

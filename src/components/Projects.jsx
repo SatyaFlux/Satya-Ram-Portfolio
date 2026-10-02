@@ -19,7 +19,7 @@ export default function Projects({ onOpenProject }) {
             PORTFOLIO
           </span>
           <h2 className="navsoul-section-title">
-            <span className="navsoul-slash">/</span>Selected Work
+            <span className="navsoul-slash">/</span>Software Engineer Portfolio
           </h2>
         </div>
 

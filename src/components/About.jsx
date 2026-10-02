@@ -12,7 +12,7 @@ export default function About() {
           </div>
 
           <h2 className="about-formal-title">
-            Software Engineer building intelligent digital products, scalable web systems, and high-performance applications.
+            Software Engineer &amp; AI/ML Developer building scalable web applications and intelligent systems.
           </h2>
 
           <p className="about-sub-description">

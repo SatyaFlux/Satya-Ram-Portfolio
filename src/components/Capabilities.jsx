@@ -43,7 +43,7 @@ export default function Capabilities() {
           </div>
 
           <h2 className="capabilities-formal-title">
-            Engineering solutions built for scale, intelligence, and performance.
+            Web Developer &amp; AI/ML engineering solutions built for scale, intelligence, and performance.
           </h2>
 
           <p className="capabilities-sub-desc">
