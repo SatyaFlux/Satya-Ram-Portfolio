@@ -156,28 +156,28 @@ export default function Projects({ onOpenProject }) {
                     <span className="ribbon-icon" style={{ background: 'rgba(16, 185, 129, 0.12)', color: '#059669' }}>⚛️</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Interactive Table</span>
-                      <span className="ribbon-sub">All 118 elements & orbitals.</span>
+                      <span className="ribbon-sub">118 Periodic Elements</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: 'rgba(13, 148, 136, 0.12)', color: '#0d9488' }}>🔬</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Reaction Engine</span>
-                      <span className="ribbon-sub">Balance & simulate equations.</span>
+                      <span className="ribbon-sub">Balance &amp; Simulate</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: 'rgba(16, 185, 129, 0.12)', color: '#059669' }}>🤖</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">AI Chemistry Tutor</span>
-                      <span className="ribbon-sub">Step-by-step guidance.</span>
+                      <span className="ribbon-sub">Smart Step Guidance</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: 'rgba(13, 148, 136, 0.12)', color: '#0d9488' }}>📚</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Track Mastery</span>
-                      <span className="ribbon-sub">Bookmarks & cloud progress.</span>
+                      <span className="ribbon-sub">Cloud Study Paths</span>
                     </div>
                   </div>
                 </div>
@@ -289,28 +289,28 @@ export default function Projects({ onOpenProject }) {
                     <span className="ribbon-icon" style={{ background: 'rgba(202, 138, 4, 0.12)', color: '#b45309' }}>🏪</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Digital Storefront</span>
-                      <span className="ribbon-sub">Staples, spices & essentials.</span>
+                      <span className="ribbon-sub">Daily Kirana Catalog</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: 'rgba(22, 163, 74, 0.12)', color: '#16a34a' }}>⚡</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Express Delivery</span>
-                      <span className="ribbon-sub">30-45 min doorstep drops.</span>
+                      <span className="ribbon-sub">30-45 Min Doorstep</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: 'rgba(202, 138, 4, 0.12)', color: '#b45309' }}>💬</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">1-Click WhatsApp</span>
-                      <span className="ribbon-sub">Direct merchant messaging.</span>
+                      <span className="ribbon-sub">Direct Cart Orders</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: 'rgba(22, 163, 74, 0.12)', color: '#16a34a' }}>💳</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Flexible Checkout</span>
-                      <span className="ribbon-sub">Cash, UPI & instant slips.</span>
+                      <span className="ribbon-sub">Cash &amp; UPI Options</span>
                     </div>
                   </div>
                 </div>
@@ -422,28 +422,28 @@ export default function Projects({ onOpenProject }) {
                     <span className="ribbon-icon" style={{ background: 'rgba(219, 39, 119, 0.1)', color: '#db2777' }}>🏷️</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Fair Pricing</span>
-                      <span className="ribbon-sub">Transparent daily market rates.</span>
+                      <span className="ribbon-sub">Transparent Daily Rates</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: 'rgba(132, 43, 139, 0.1)', color: '#842b8b' }}>🔍</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Instant Search</span>
-                      <span className="ribbon-sub">Dynamic category & item filter.</span>
+                      <span className="ribbon-sub">Fast Category Filters</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: 'rgba(219, 39, 119, 0.1)', color: '#db2777' }}>📦</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Order Tracking</span>
-                      <span className="ribbon-sub">Real-time fulfillment updates.</span>
+                      <span className="ribbon-sub">Live Status Updates</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: 'rgba(132, 43, 139, 0.1)', color: '#842b8b' }}>🛡️</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Verified Quality</span>
-                      <span className="ribbon-sub">Clean shopping guarantee.</span>
+                      <span className="ribbon-sub">Direct Honest Sourcing</span>
                     </div>
                   </div>
                 </div>
@@ -555,28 +555,28 @@ export default function Projects({ onOpenProject }) {
                     <span className="ribbon-icon" style={{ background: 'rgba(37, 99, 235, 0.1)', color: '#2563eb' }}>🏛️</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Village Services</span>
-                      <span className="ribbon-sub">Certificates & grievance logs.</span>
+                      <span className="ribbon-sub">Civic Certificates</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: 'rgba(13, 148, 136, 0.1)', color: '#0d9488' }}>📊</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Panchayat Data</span>
-                      <span className="ribbon-sub">Funds, schemes & projects.</span>
+                      <span className="ribbon-sub">Public Welfare Funds</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: 'rgba(37, 99, 235, 0.1)', color: '#2563eb' }}>🌾</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Farmer Support</span>
-                      <span className="ribbon-sub">Crop advisories & mandi prices.</span>
+                      <span className="ribbon-sub">Mandi &amp; Crop Feeds</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: 'rgba(13, 148, 136, 0.1)', color: '#0d9488' }}>📲</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Citizen Access</span>
-                      <span className="ribbon-sub">Multi-lingual digital portal UI.</span>
+                      <span className="ribbon-sub">Multi-Lingual Portal</span>
                     </div>
                   </div>
                 </div>
@@ -624,28 +624,28 @@ export default function Projects({ onOpenProject }) {
                     <span className="ribbon-icon" style={{ background: '#f5f5f4', color: '#1c1917' }}>📋</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Unified View</span>
-                      <span className="ribbon-sub">Consolidated tasks.</span>
+                      <span className="ribbon-sub">Consolidated Tasks</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: '#f5f5f4', color: '#1c1917' }}>🎯</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Habit Rings</span>
-                      <span className="ribbon-sub">Daily discipline loops.</span>
+                      <span className="ribbon-sub">Daily Habit Loops</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: '#f5f5f4', color: '#1c1917' }}>⚡</span>
                     <div className="ribbon-text">
                       <span className="ribbon-title">Ultra Fast</span>
-                      <span className="ribbon-sub">Zero-lag interface.</span>
+                      <span className="ribbon-sub">Zero-Lag Interface</span>
                     </div>
                   </div>
                   <div className="ribbon-item">
                     <span className="ribbon-icon" style={{ background: '#f5f5f4', color: '#1c1917' }}>🔒</span>
                     <div className="ribbon-text">
-                      <span className="ribbon-title">Private</span>
-                      <span className="ribbon-sub">No trackers.</span>
+                      <span className="ribbon-title">Private OS</span>
+                      <span className="ribbon-sub">Local Private Storage</span>
                     </div>
                   </div>
                 </div>

@@ -32,31 +32,64 @@ export default function About() {
               My experience spans building full-cycle digital platforms—designing resilient database schemas, integrating machine learning capabilities, and creating responsive, fluid frontends engineered for performance across all screen sizes.
             </p>
 
-            {/* 3 Core Focus Cards */}
+            {/* 3 Core Focus Cards — Enhanced & Fully Responsive */}
             <div className="about-pillars-grid">
-              <div className="pillar-card">
-                <div className="pillar-icon-box">⚙️</div>
-                <div className="pillar-content">
-                  <h4>Software Architecture &amp; Clean Code</h4>
-                  <p>Scalable system architecture, clean modular codebases, performant RESTful APIs, and robust database design.</p>
+              <article className="pillar-card pillar-card-emerald">
+                <div className="pillar-top-row">
+                  <div className="pillar-icon-box pillar-icon-emerald">⚙️</div>
+                  <span className="pillar-category-tag tag-emerald">Core Architecture</span>
                 </div>
-              </div>
+                <div className="pillar-body">
+                  <h4 className="pillar-title">Software Architecture &amp; Clean Code</h4>
+                  <p className="pillar-desc">
+                    Designing scalable system architecture, clean modular codebases, performant RESTful APIs, and robust relational database structures.
+                  </p>
+                </div>
+                <div className="pillar-tags-row">
+                  <span className="pillar-tag">System Design</span>
+                  <span className="pillar-tag">Clean Architecture</span>
+                  <span className="pillar-tag">RESTful APIs</span>
+                  <span className="pillar-tag">PostgreSQL</span>
+                </div>
+              </article>
 
-              <div className="pillar-card">
-                <div className="pillar-icon-box">🧠</div>
-                <div className="pillar-content">
-                  <h4>AI &amp; Machine Learning Systems</h4>
-                  <p>Integrating predictive intelligence, machine learning models, and smart automation pipelines into production workflows.</p>
+              <article className="pillar-card pillar-card-blue">
+                <div className="pillar-top-row">
+                  <div className="pillar-icon-box pillar-icon-blue">🧠</div>
+                  <span className="pillar-category-tag tag-blue">Applied Intelligence</span>
                 </div>
-              </div>
+                <div className="pillar-body">
+                  <h4 className="pillar-title">AI &amp; Machine Learning Systems</h4>
+                  <p className="pillar-desc">
+                    Integrating predictive intelligence, deep learning models, computer vision pipelines, and automated inference workflows into real products.
+                  </p>
+                </div>
+                <div className="pillar-tags-row">
+                  <span className="pillar-tag">Deep Learning</span>
+                  <span className="pillar-tag">Computer Vision</span>
+                  <span className="pillar-tag">Automation</span>
+                  <span className="pillar-tag">NLP Pipelines</span>
+                </div>
+              </article>
 
-              <div className="pillar-card">
-                <div className="pillar-icon-box">🌐</div>
-                <div className="pillar-content">
-                  <h4>Modern Full Stack &amp; Web Platforms</h4>
-                  <p>End-to-end web experiences crafted with React, Python, Node.js, Supabase, and cloud-native deployments.</p>
+              <article className="pillar-card pillar-card-purple">
+                <div className="pillar-top-row">
+                  <div className="pillar-icon-box pillar-icon-purple">🌐</div>
+                  <span className="pillar-category-tag tag-purple">Full Lifecycle</span>
                 </div>
-              </div>
+                <div className="pillar-body">
+                  <h4 className="pillar-title">Modern Full Stack &amp; Web Platforms</h4>
+                  <p className="pillar-desc">
+                    Delivering end-to-end web experiences crafted with React, Python, Node.js, Supabase, and responsive layouts engineered for all screen sizes.
+                  </p>
+                </div>
+                <div className="pillar-tags-row">
+                  <span className="pillar-tag">React Ecosystem</span>
+                  <span className="pillar-tag">Node.js &amp; Python</span>
+                  <span className="pillar-tag">Supabase</span>
+                  <span className="pillar-tag">Cloud Native</span>
+                </div>
+              </article>
             </div>
           </div>
 
