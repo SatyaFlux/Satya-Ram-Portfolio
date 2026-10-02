@@ -1142,73 +1142,120 @@ input, textarea {
 .about-pillars-grid {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  margin-top: 1.5rem;
+  gap: 1.75rem;
+  margin-top: 2rem;
 }
 
 .pillar-card {
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 18px;
-  padding: clamp(1.25rem, 2.5vw, 1.6rem);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
-              box-shadow 0.3s ease, 
+  border: 1.5px solid rgba(15, 23, 42, 0.08);
+  border-radius: 24px;
+  padding: clamp(1.85rem, 3.2vw, 2.75rem);
+  box-shadow: 0 10px 30px -8px rgba(15, 23, 42, 0.05), 0 2px 8px rgba(15, 23, 42, 0.02);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
               border-color 0.3s ease;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 1.2rem;
   position: relative;
+  overflow: hidden;
+}
+
+.pillar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pillar-card-emerald:hover::before {
+  background: #10b981;
+  opacity: 1;
+}
+
+.pillar-card-blue:hover::before {
+  background: #3b82f6;
+  opacity: 1;
+}
+
+.pillar-card-purple:hover::before {
+  background: #8b5cf6;
+  opacity: 1;
 }
 
 .pillar-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(15, 23, 42, 0.18);
-  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.07);
+  transform: translateY(-5px);
+  box-shadow: 0 24px 50px -12px rgba(15, 23, 42, 0.1), 0 6px 16px rgba(15, 23, 42, 0.04);
+}
+
+.pillar-card-emerald:hover {
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.pillar-card-blue:hover {
+  border-color: rgba(59, 130, 246, 0.35);
+}
+
+.pillar-card-purple:hover {
+  border-color: rgba(139, 92, 246, 0.35);
 }
 
 .pillar-top-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 16px;
 }
 
 .pillar-icon-box {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.35rem;
+  font-size: 1.9rem;
   flex-shrink: 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pillar-card:hover .pillar-icon-box {
+  transform: scale(1.08) rotate(2deg);
 }
 
 .pillar-icon-emerald {
-  background: #ecfdf5;
-  border: 1px solid rgba(16, 185, 129, 0.25);
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  border: 1.5px solid rgba(16, 185, 129, 0.35);
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.15);
 }
 
 .pillar-icon-blue {
-  background: #eff6ff;
-  border: 1px solid rgba(59, 130, 246, 0.25);
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1.5px solid rgba(59, 130, 246, 0.35);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.15);
 }
 
 .pillar-icon-purple {
-  background: #f5f3ff;
-  border: 1px solid rgba(139, 92, 246, 0.25);
+  background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+  border: 1.5px solid rgba(139, 92, 246, 0.35);
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.15);
 }
 
 .pillar-category-tag {
   font-family: var(--font-sans);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  font-size: clamp(0.74rem, 1vw, 0.8rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 4px 10px;
+  padding: 6px 14px;
   border-radius: 999px;
+  transition: all 0.2s ease;
 }
 
 .tag-emerald {
@@ -1229,38 +1276,44 @@ input, textarea {
   border: 1px solid #e9d5ff;
 }
 
+.pillar-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
 .pillar-title {
   font-family: var(--font-sans);
-  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
-  font-weight: 700;
-  letter-spacing: -0.015em;
+  font-size: clamp(1.35rem, 2.2vw, 1.68rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
   color: #0f172a;
-  line-height: 1.3;
-  margin-bottom: 0.35rem;
+  line-height: 1.32;
+  margin: 0;
 }
 
 .pillar-desc {
-  font-size: 0.92rem;
-  line-height: 1.6;
-  color: #64748b;
+  font-size: clamp(0.98rem, 1.25vw, 1.08rem);
+  line-height: 1.72;
+  color: #475569;
   margin: 0;
 }
 
 .pillar-tags-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 0.25rem;
+  gap: 8px;
+  margin-top: 0.35rem;
 }
 
 .pillar-tag {
   font-family: var(--font-sans);
-  font-size: 0.72rem;
+  font-size: clamp(0.76rem, 1vw, 0.84rem);
   font-weight: 600;
   color: #334155;
   background: #f8fafc;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  padding: 3px 10px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  padding: 6px 14px;
   border-radius: 999px;
   transition: all 0.2s ease;
 }
@@ -1268,18 +1321,19 @@ input, textarea {
 .pillar-card:hover .pillar-tag {
   background: #f1f5f9;
   color: #0f172a;
+  border-color: rgba(15, 23, 42, 0.16);
 }
 
 /* Right Executive Profile Card */
 .about-dossier-card {
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 20px;
-  padding: clamp(1.8rem, 3.5vw, 2.4rem);
-  box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.06);
+  border: 1.5px solid rgba(15, 23, 42, 0.08);
+  border-radius: 24px;
+  padding: clamp(2rem, 3.5vw, 2.8rem);
+  box-shadow: 0 16px 45px -15px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  gap: 1.85rem;
 }
 
 .dossier-top-bar {
@@ -4167,39 +4221,53 @@ input, textarea {
     gap: 2.25rem;
   }
 
+  .about-pillars-grid {
+    gap: 1.35rem;
+    margin-top: 1.5rem;
+  }
+
   .pillar-card {
-    padding: 1.15rem 1rem;
-    border-radius: 16px;
+    padding: 1.5rem 1.25rem;
+    border-radius: 20px;
+    gap: 1rem;
   }
 
   .pillar-icon-box {
-    width: 40px;
-    height: 40px;
-    font-size: 1.25rem;
+    width: 50px;
+    height: 50px;
+    font-size: 1.55rem;
+    border-radius: 14px;
   }
 
   .pillar-category-tag {
-    font-size: 0.64rem;
-    padding: 3px 8px;
+    font-size: 0.7rem;
+    padding: 5px 12px;
   }
 
   .pillar-title {
-    font-size: 1.08rem;
+    font-size: clamp(1.22rem, 4.4vw, 1.4rem);
+    line-height: 1.32;
   }
 
   .pillar-desc {
-    font-size: 0.88rem;
-    line-height: 1.55;
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .pillar-tags-row {
+    gap: 7px;
+    margin-top: 0.25rem;
   }
 
   .pillar-tag {
-    font-size: 0.68rem;
-    padding: 3px 8px;
+    font-size: 0.74rem;
+    padding: 5px 12px;
   }
 
   .about-dossier-card {
-    padding: 1.35rem 1.15rem;
-    border-radius: 18px;
+    padding: 1.6rem 1.35rem;
+    border-radius: 20px;
+    gap: 1.35rem;
   }
 
   .dossier-row {
