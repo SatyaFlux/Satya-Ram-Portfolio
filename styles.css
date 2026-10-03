@@ -681,7 +681,7 @@ input, textarea {
 /* Giant Headline across the upper hero */
 .hero-giant-headline {
   position: absolute;
-  top: clamp(100px, 14vh, 155px);
+  top: clamp(80px, 10.5vh, 120px);
   left: 0;
   width: 100%;
   display: flex;
@@ -690,7 +690,7 @@ input, textarea {
   user-select: none;
   pointer-events: none;
   z-index: 1;
-  padding-inline: 1rem;
+  padding-inline: 1.5rem;
 }
 
 .hero-giant-svg {
@@ -722,14 +722,15 @@ input, textarea {
   fill: #111111;
 }
 
-/* Center Cutout Portrait of Satya overlapping the typography */
+/* Center Cutout Portrait of Satya - STABLE IN CENTER, POSITIONED BELOW SATYA RAM WITHOUT TOUCHING */
 .hero-center-portrait {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  height: clamp(480px, 78vh, 760px);
+  height: clamp(370px, 50vh, 480px);
+  max-height: calc(100vh - 280px);
   width: auto;
   pointer-events: none;
   display: flex;
@@ -738,13 +739,28 @@ input, textarea {
   transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
+.hero-center-portrait::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(240px, 35vw, 420px);
+  height: clamp(240px, 35vw, 420px);
+  background: radial-gradient(circle, rgba(200, 241, 105, 0.14) 0%, rgba(244, 243, 238, 0.3) 45%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(25px);
+}
+
 .center-cutout-img {
   height: 100%;
   width: auto;
   max-width: none;
   object-fit: contain;
   object-position: bottom center;
-  filter: grayscale(100%) contrast(110%) brightness(102%) drop-shadow(0 14px 28px rgba(0, 0, 0, 0.12));
+  filter: contrast(110%) brightness(102%) drop-shadow(0 16px 32px rgba(0, 0, 0, 0.14));
   image-rendering: -webkit-optimize-contrast;
   display: block;
   transition: filter 0.3s ease;
@@ -2549,7 +2565,7 @@ input, textarea {
     max-width: 85%;
     object-fit: contain;
     object-position: center;
-    filter: grayscale(100%) contrast(110%) brightness(102%) drop-shadow(0 12px 24px rgba(0, 0, 0, 0.12));
+    filter: contrast(110%) brightness(102%) drop-shadow(0 12px 24px rgba(0, 0, 0, 0.12));
     image-rendering: -webkit-optimize-contrast;
     margin-inline: auto;
   }
@@ -2663,7 +2679,7 @@ input, textarea {
 
   .center-cutout-img {
     max-width: 80%;
-    filter: grayscale(100%) contrast(110%) brightness(102%) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.12));
+    filter: contrast(110%) brightness(102%) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.12));
   }
 
   .hero-cta-group {
