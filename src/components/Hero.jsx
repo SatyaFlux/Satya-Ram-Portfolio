@@ -54,7 +54,7 @@ export default function Hero({ onCopyEmail }) {
         onMouseDown={(e) => e.preventDefault()}
       >
         <img
-          src="/portrait-cutout.png"
+          src="/portrait-cutout.png?v=8k-rado-v2"
           alt="Satya Ram — Software Engineer and AI/ML Developer"
           className="center-cutout-img"
           fetchPriority="high"
